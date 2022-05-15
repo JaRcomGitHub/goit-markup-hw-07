@@ -1,0 +1,38 @@
+//text-h2 our-clients__title
+//Постоянные клиенты
+
+.our-clients {
+    @extend .section;
+}
+
+.our-clients__title {
+    @extend .text-h2;
+}
+
+.our-clients__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.our-clients__item {
+    @include margin-right-between-elements(30px);
+}
+
+.our-clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    fill: $no-text-link-color;
+    border: 1px solid $no-text-link-color;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $active-main-color;
+        border: 1px solid $active-main-color;
+    }
+}

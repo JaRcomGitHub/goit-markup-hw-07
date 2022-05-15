@@ -1,0 +1,19 @@
+@import 'utils/variables';
+@import 'utils/common';
+@import 'utils/social';
+@import 'components/page-header';
+@import 'components/logo';
+@import 'components/subscribe';
+@import 'components/footer';
+
+//index.html
+@import 'components/hero';
+@import 'components/modal';
+@import 'components/our-features';
+@import 'components/our-doing';
+@import 'components/our-team';
+@import 'components/our-clients';
+
+//portfolio.html
+@import 'components/portfolio';
+

@@ -1,0 +1,56 @@
+//text-h2 our-team__title
+//text-h3 our-team__name
+//text    our-team__position
+//sub-item group
+
+.our-team {
+    @extend .section;
+    background-color: $background-second-color;
+}
+
+.our-team__title {
+    @extend .text-h2;
+}
+
+.our-team__item {
+    width: 270px;
+    text-align: center;
+
+    background-color: $background-main-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @include margin-right-between-elements(30px);
+}
+
+.our-team__person {
+    @extend .text-h3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.our-team__position {
+    @extend .text;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-top: 10px;
+}
+
+.our-team__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.our-team__group {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.our-team__social {
+    margin-top: 16px;
+}
