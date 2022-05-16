@@ -42,7 +42,8 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        border: 2px solid $active-main-color;
+        height: 4px;
+        background-color: $active-main-color;
         border-radius: 2px;
     }
 }
